@@ -11,9 +11,49 @@
 		(company "Rob Kean")
 	)
 	(lib_symbols)
+	(text "ESP32-S3"
+		(exclude_from_sim no)
+		(at 88.9 88.9 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "586804fe-0b9e-47f4-9356-9dc7c2daa8be")
+	)
+	(text "User Interface"
+		(exclude_from_sim no)
+		(at 88.9 165.1 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "93dccaba-5c1f-453c-93f2-4f6fc2ca7236")
+	)
+	(text "USB and Power"
+		(exclude_from_sim no)
+		(at 88.9 50.8 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "ed036fe4-2405-4aff-a23f-5216010a9740")
+	)
+	(text "CAN Bus"
+		(exclude_from_sim no)
+		(at 88.9 127 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "f203e98f-6193-4ae3-8df4-f0eb0011d1a2")
+	)
 	(sheet
-		(at 129.54 78.74)
-		(size 40.64 22.86)
+		(at 50.8 76.2)
+		(size 76.2 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -28,7 +68,7 @@
 		)
 		(uuid "1bd9ab2f-c548-4f8c-a613-aa21e00826ca")
 		(property "Sheetname" "ESP32-S3-PICO-1"
-			(at 129.54 78.0284 0)
+			(at 50.8 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37,7 +77,7 @@
 			)
 		)
 		(property "Sheetfile" "ESP32-S3-PICO-1.kicad_sch"
-			(at 129.54 102.1846 0)
+			(at 50.8 102.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54,8 +94,8 @@
 		)
 	)
 	(sheet
-		(at 218.44 99.06)
-		(size 43.18 22.86)
+		(at 50.8 114.3)
+		(size 76.2 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -70,7 +110,7 @@
 		)
 		(uuid "a04a4bdb-30b7-44d7-ac1c-f847f02e7058")
 		(property "Sheetname" "CAN_Interface"
-			(at 218.44 98.3484 0)
+			(at 50.8 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -79,7 +119,7 @@
 			)
 		)
 		(property "Sheetfile" "CAN_Interface.kicad_sch"
-			(at 218.44 122.5046 0)
+			(at 50.8 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -96,8 +136,50 @@
 		)
 	)
 	(sheet
-		(at 88.9 55.88)
-		(size 15.24 10.16)
+		(at 50.8 152.4)
+		(size 76.2 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bab7d682-b0e3-4047-9d1d-6dbb03ef67cc")
+		(property "Sheetname" "User Interface"
+			(at 50.8 151.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "User_Interface.kicad_sch"
+			(at 50.8 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 38.1)
+		(size 76.2 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -112,7 +194,7 @@
 		)
 		(uuid "e0972e0f-f0f8-4dcf-a84b-49aae9c274e3")
 		(property "Sheetname" "USB_Power_Interface"
-			(at 88.9 55.1684 0)
+			(at 50.8 37.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -121,7 +203,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_Power_Interace.kicad_sch"
-			(at 88.9 66.6246 0)
+			(at 50.8 64.0846 0)
 			(effects
 				(font
 					(size 1.27 1.27)

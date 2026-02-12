@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.3,
-          "width": 0.25
+          "height": 0.75,
+          "width": 0.216
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -73,7 +73,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "ignore",
+        "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -81,9 +81,9 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "warning",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -102,11 +102,11 @@
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
-        "padstack": "ignore",
+        "padstack": "warning",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
-        "silk_over_copper": "ignore",
+        "silk_edge_clearance": "error",
+        "silk_over_copper": "warning",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
@@ -129,20 +129,20 @@
       "rules": {
         "max_error": 0.005,
         "min_clearance": 0.1,
-        "min_connection": 0.1,
+        "min_connection": 0.09,
         "min_copper_edge_clearance": 0.0,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.15,
+        "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.1,
+        "min_text_height": 0.6,
+        "min_text_thickness": 0.075,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.1,
-        "min_via_annular_width": 0.05,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.125,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.05,
         "use_height_for_length_calcs": true
@@ -193,12 +193,12 @@
       ],
       "track_widths": [
         0.0,
+        0.09,
         0.1,
-        0.125,
         0.15,
         0.2,
-        0.25,
         0.3,
+        0.4,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -233,28 +233,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.25,
-          "drill": 0.15
-        },
-        {
-          "diameter": 0.4,
-          "drill": 0.3
-        },
-        {
           "diameter": 0.45,
           "drill": 0.2
-        },
-        {
-          "diameter": 0.45,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.7,
-          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": true
@@ -497,10 +477,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Personal_FootprintLibrary",
       "Capacitors",
       "Resistors",
-      "QuinLED"
+      "QuinLED",
+      "Personal_FootprintLibrary"
     ],
     "pinned_symbol_libs": [
       "PersonalSchematicSymbolLibrary",
@@ -528,59 +508,31 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
         "wire_width": 6
       },
       {
-        "line_style": 0,
-        "name": "3V",
-        "pcb_color": "rgb(255, 0, 0)",
-        "priority": 5,
-        "schematic_color": "rgb(255, 0, 0)"
-      },
-      {
-        "line_style": 0,
-        "name": "5V",
-        "pcb_color": "rgb(194, 0, 0)",
-        "priority": 6,
-        "schematic_color": "rgb(194, 0, 0)"
-      },
-      {
-        "line_style": 0,
-        "name": "GND",
-        "pcb_color": "rgb(194, 194, 194)",
-        "priority": 1,
-        "schematic_color": "rgb(194, 194, 194)"
-      },
-      {
-        "line_style": 0,
-        "name": "GPIO",
-        "pcb_color": "rgb(0, 0, 255)",
-        "priority": 3,
-        "schematic_color": "rgb(0, 0, 255)"
+        "name": "CAN_DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(0, 194, 194)"
       },
       {
         "clearance": 0.15,
         "line_style": 0,
         "name": "RF",
-        "pcb_color": "rgb(255, 0, 255)",
-        "priority": 2,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.1402
       },
       {
         "line_style": 0,
-        "name": "USB",
-        "pcb_color": "rgb(0, 255, 0)",
-        "priority": 4,
+        "name": "USB_DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgb(0, 255, 0)"
-      },
-      {
-        "name": "xIO",
-        "pcb_color": "rgb(0, 255, 255)",
-        "priority": 0,
-        "schematic_color": "rgb(0, 255, 255)"
       }
     ],
     "meta": {
@@ -590,192 +542,16 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": ""
+        "netclass": "USB_DP",
+        "pattern": "USB_D*"
       },
       {
-        "netclass": "3V",
-        "pattern": "+3*"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "+5*"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "+VBus"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "/Ant*"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "/IO_*"
+        "netclass": "CAN_DP",
+        "pattern": "*/CAN_*"
       },
       {
         "netclass": "RF",
-        "pattern": "/RF*"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USB*"
-      },
-      {
-        "netclass": "3V",
-        "pattern": "3V3"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "5VF"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "Ant_Sel"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "EN"
-      },
-      {
-        "netclass": "GND",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_00"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_01"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_02"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_03"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_04"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_05"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_06"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_07"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_08"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_09"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_10"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_11"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_12"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_13"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_14"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_15"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_16"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_17"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_18"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_21"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_38"
-      },
-      {
-        "netclass": "xIO",
-        "pattern": "IO_39"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_40"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_41"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_42"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_43"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_44"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_45"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_47"
-      },
-      {
-        "netclass": "GPIO",
-        "pattern": "IO_48"
-      },
-      {
-        "netclass": "RF",
-        "pattern": "RFIN"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "USB_D+"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "USB_D-"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "VCC"
+        "pattern": "*/RF*"
       }
     ]
   },
@@ -829,10 +605,10 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -847,10 +623,10 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -862,37 +638,37 @@
           "group_by": false,
           "label": "Distributor Link 2",
           "name": "Distributor Link 2",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Manufacturer Part Number",
           "name": "Manufacturer Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Distributor Link 1",
           "name": "Distributor Link 1",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -911,9 +687,33 @@
           "label": "Distributor  Link 2",
           "name": "Distributor  Link 2",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field10",
+          "name": "Field10",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number (alt)",
+          "name": "Manufacturer Part Number (alt)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer (alt)",
+          "name": "Manufacturer (alt)",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor LInk 1",
+          "name": "Distributor LInk 1",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "C",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -984,6 +784,10 @@
     [
       "a04a4bdb-30b7-44d7-ac1c-f847f02e7058",
       "CAN_Interface"
+    ],
+    [
+      "bab7d682-b0e3-4047-9d1d-6dbb03ef67cc",
+      "User Interface"
     ]
   ],
   "text_variables": {}

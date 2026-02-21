@@ -1503,8 +1503,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "CN1"
-				(at -9.144 19.304 0)
+			(property "Reference" "CN"
+				(at 0 22.225 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1512,14 +1512,14 @@
 				)
 			)
 			(property "Value" "USC_C_Receptacle_Hirose_CX90M-16P"
-				(at -13.208 0 90)
+				(at 0 19.685 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Personal_FootprintLibrary:USB_C_Receptacle_Hirose_CX90M-16P"
+			(property "Footprint" ""
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -1977,43 +1977,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -3.81 -22.86 90)
-					(length 5.08)
-					(name "MID"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MID1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -22.86 90)
-					(length 5.08)
-					(hide yes)
-					(name "MID"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MID2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(symbol "USC_C_Receptacle_Hirose_CX90M-16P_1_1"
 				(rectangle
@@ -2120,7 +2083,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 15.24 15.24 180)
 					(length 5.08)
 					(name "VBUS"
@@ -2751,12 +2714,6 @@
 		(uuid "210d3ef6-277f-4266-adf2-456f57ce5d09")
 	)
 	(junction
-		(at 261.62 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ad5af15-41fb-4164-b10a-989484e6e2fe")
-	)
-	(junction
 		(at 45.72 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2767,6 +2724,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33e6131d-c349-4e99-bfe4-565368bc6edd")
+	)
+	(junction
+		(at 213.36 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "389cee0f-8831-4489-a65a-71a89c57676d")
+	)
+	(junction
+		(at 78.74 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3966eb25-ed2e-4f9f-bb96-62062b2c8d16")
 	)
 	(junction
 		(at 129.54 63.5)
@@ -2811,12 +2780,6 @@
 		(uuid "4660b7d9-2026-46cc-a305-3a4055a7d4d0")
 	)
 	(junction
-		(at 41.91 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4be94d0f-ccea-471b-8f17-02f5018029c3")
-	)
-	(junction
 		(at 127 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2833,6 +2796,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62f35eb2-4b5a-4f7f-a006-e5dd1f6ffd12")
+	)
+	(junction
+		(at 66.04 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "745ea7ed-c9f2-4088-9edf-088d0cde9973")
 	)
 	(junction
 		(at 129.54 49.53)
@@ -2853,6 +2822,12 @@
 		(uuid "785a106b-0140-48fa-bdb9-10b90322ba84")
 	)
 	(junction
+		(at 137.16 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b6d405a-854f-4670-a6e6-c5723d0a1166")
+	)
+	(junction
 		(at 137.16 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2863,12 +2838,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "924a4c55-80b0-432f-bd54-22d76ad9487a")
-	)
-	(junction
-		(at 213.36 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "957cc671-9f41-4192-8770-a4a45a78bd6b")
 	)
 	(junction
 		(at 91.44 127)
@@ -2967,12 +2936,6 @@
 		(uuid "d3d9d057-7e5e-48e9-bcda-fca55b61a1a7")
 	)
 	(junction
-		(at 137.16 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d98a1fdf-9b4a-4759-931b-51213b320898")
-	)
-	(junction
 		(at 129.54 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3007,6 +2970,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed3ccd1e-cc3a-462b-ad67-b46c217b0508")
+	)
+	(junction
+		(at 78.74 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f293a4f1-80cd-4056-adef-3dc4f967e9c7")
 	)
 	(junction
 		(at 40.64 134.62)
@@ -3095,6 +3064,16 @@
 			(type default)
 		)
 		(uuid "08f8559d-7ede-450a-8db6-930ad89af75d")
+	)
+	(wire
+		(pts
+			(xy 78.74 66.04) (xy 78.74 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbe6b51-bdf4-473d-84c5-0e3c6e223bc6")
 	)
 	(wire
 		(pts
@@ -3325,16 +3304,6 @@
 			(type default)
 		)
 		(uuid "2bc25e4f-6d9f-41de-8b6d-6097528748fd")
-	)
-	(wire
-		(pts
-			(xy 261.62 45.72) (xy 261.62 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c001c79-8d1a-4f65-948b-02b2f2b882e6")
 	)
 	(wire
 		(pts
@@ -3718,6 +3687,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 66.04) (xy 78.74 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "505d434c-7f02-4012-b532-d1e1d9d78bd2")
+	)
+	(wire
+		(pts
 			(xy 152.4 134.62) (xy 152.4 143.51)
 		)
 		(stroke
@@ -3875,6 +3854,26 @@
 			(type default)
 		)
 		(uuid "66752ac5-e21c-4c13-a401-b5a86c6c00fa")
+	)
+	(wire
+		(pts
+			(xy 66.04 33.02) (xy 78.74 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670cf215-4b42-449c-915c-f0060660d694")
+	)
+	(wire
+		(pts
+			(xy 76.2 64.77) (xy 76.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c29f96-7671-4b5c-93ed-a029221b335e")
 	)
 	(wire
 		(pts
@@ -4068,16 +4067,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 71.12) (xy 41.91 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f5f3e17-111a-4dbe-84d4-efa8dcb0e0a5")
-	)
-	(wire
-		(pts
 			(xy 205.74 55.88) (xy 205.74 63.5)
 		)
 		(stroke
@@ -4095,16 +4084,6 @@
 			(type default)
 		)
 		(uuid "80a20caf-35c0-43e7-bd35-86ab639ba4eb")
-	)
-	(wire
-		(pts
-			(xy 261.62 59.69) (xy 261.62 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81afbba9-2628-4b47-bacc-a1a8d48a530f")
 	)
 	(wire
 		(pts
@@ -4188,7 +4167,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 73.66) (xy 45.72 73.66)
+			(xy 38.1 73.66) (xy 45.72 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4245,6 +4224,26 @@
 			(type default)
 		)
 		(uuid "90797a66-8952-4163-9928-cbf722a2edae")
+	)
+	(wire
+		(pts
+			(xy 78.74 57.15) (xy 81.28 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b1c0dc-2d16-48ad-812d-36c021b6d2df")
+	)
+	(wire
+		(pts
+			(xy 81.28 66.04) (xy 78.74 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "939b0679-14ab-43a9-bad9-6fff1d7185e6")
 	)
 	(wire
 		(pts
@@ -4328,7 +4327,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 63.5) (xy 261.62 63.5)
+			(xy 243.84 63.5) (xy 264.16 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4388,7 +4387,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 64.77) (xy 78.74 76.2)
+			(xy 81.28 64.77) (xy 81.28 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4518,7 +4517,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 33.02) (xy 78.74 33.02)
+			(xy 60.96 33.02) (xy 66.04 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4568,16 +4567,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 73.66) (xy 41.91 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1a03afb-c1a6-405b-aa60-c647a50111bf")
-	)
-	(wire
-		(pts
 			(xy 127 158.75) (xy 144.78 158.75)
 		)
 		(stroke
@@ -4615,16 +4604,6 @@
 			(type default)
 		)
 		(uuid "c38e9619-df1e-4ef8-aeb6-d8e3628b4ac4")
-	)
-	(wire
-		(pts
-			(xy 261.62 63.5) (xy 264.16 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4329c46-e659-4b7a-97ef-8bba63d16360")
 	)
 	(wire
 		(pts
@@ -4905,6 +4884,16 @@
 			(type default)
 		)
 		(uuid "f391aa55-4864-46e8-863e-980a9f3b26de")
+	)
+	(wire
+		(pts
+			(xy 76.2 57.15) (xy 78.74 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4a3fcf6-c772-438d-8fbe-4ea0e41a1598")
 	)
 	(wire
 		(pts
@@ -5814,122 +5803,123 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 248.92 68.58 0)
+		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
+		(at 91.44 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "091c7c6b-b927-489e-ab15-ef022dc4a6ba")
-		(property "Reference" "R27"
-			(at 247.65 66.04 90)
+		(uuid "07a4465b-ceb5-4af3-8371-40a3b5a7a4f9")
+		(property "Reference" "D3"
+			(at 92.71 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "ESDSLC24VLB-TP"
+			(at 88.9 59.6901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 91.44 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/ESDSLC24VLB(DFN1006-2).pdf"
+			(at 83.82 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
-			)
-		)
-		(property "Value" "40k2"
-			(at 248.92 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 247.142 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590223907921174529"
-			(at 248.92 68.58 0)
+		(property "Description" "ESD bidirectional diode, 24Vrwm, 26.5Vbr, 40Vcl, DFN1006"
+			(at 81.28 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Description" "95.3kΩ, 25V, 50mW, Thick Film, ±1% 0201 SMD"
-			(at 248.92 68.58 0)
+		(property "Manufacturer" "MCC(Micro Commercial Components)"
+			(at 86.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 248.92 68.58 90)
+		(property "Manufacturer Part Number" "ESDSLC24VLB-TP"
+			(at 86.36 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "0201WMF9532TEE"
-			(at 248.92 68.58 90)
+		(property "LCSC" "C7463931"
+			(at 78.74 60.96 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C423395"
-			(at 248.92 68.58 90)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/mcc-micro-commercial-components/ESDSLC24VLB-TP/17945310"
+			(at 76.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" ""
-			(at 248.92 68.58 90)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/ESDSLC24VLB-TP?qs=rSMjJ%252B1ewcTdJ4KduSUKUw%3D%3D"
+			(at 73.66 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 				(hide yes)
 			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF9532TEE?qs=e8oIoAS2J1QewOvTgKSw9g%3D%3D"
-			(at 248.92 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 248.92 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b9f10180-a986-4704-b207-c453661e106e")
 		)
 		(pin "1"
-			(uuid "8a02a68c-53e7-419a-b458-40e9072d5606")
+			(uuid "f157e98f-8052-4f6e-ba59-477966c39f98")
+		)
+		(pin "2"
+			(uuid "725f0ceb-a81a-40b0-b064-18d7d44d6ccf")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R27")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6074,7 +6064,7 @@
 				)
 			)
 		)
-		(property "Value" "USC_C_Receptacle_Hirose_CX90M-16P"
+		(property "Value" "GT-USB-7014D"
 			(at 32.512 48.26 90)
 			(effects
 				(font
@@ -6082,7 +6072,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Personal_FootprintLibrary:USB_C_Receptacle_Hirose_CX90M-16P"
+		(property "Footprint" "Personal_FootprintLibrary:USB_C_Receptacle_G-Switch-GT-USB-7014D"
 			(at 49.53 48.26 0)
 			(effects
 				(font
@@ -6091,7 +6081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.hirose.com/product/document?series=CX&documentid=D52488_en"
+		(property "Datasheet" "https://dg-switch.com/uploads/soft/230918/GT-USB-7014D.pdf"
 			(at 53.34 71.12 0)
 			(effects
 				(font
@@ -6101,7 +6091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+		(property "Description" "USB TYPE C, USB 2.0, SMD, USB-C, Mid-Mount, Sink 2.1mm, CH=-0.52mm"
 			(at 53.34 81.28 0)
 			(effects
 				(font
@@ -6111,7 +6101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Hirose"
+		(property "Manufacturer" "G-Switch"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -6121,7 +6111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "CX90M-16P"
+		(property "Manufacturer Part Number" "GT-USB-7014D"
 			(at 60.96 68.58 0)
 			(effects
 				(font
@@ -6131,7 +6121,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2889324"
+		(property "LCSC" "C2843969"
 			(at 53.34 73.66 0)
 			(show_name yes)
 			(effects
@@ -6142,7 +6132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/cx90m-16p/9559135"
+		(property "Distributor Link 1" ""
 			(at 53.34 76.2 0)
 			(effects
 				(font
@@ -6152,22 +6142,13 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Hirose-Connector/CX90M-16P?qs=byeeYqUIh0MSAGJ6bwnRQQ%3D%3D"
+		(property "Distributor Link 2" ""
 			(at 53.34 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 45.72 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -6222,9 +6203,6 @@
 		(pin "A12"
 			(uuid "64bae6d5-0fe8-4004-ac3f-8251b5bb6b48")
 		)
-		(pin "MID1"
-			(uuid "4a3f77a1-9971-4f52-b5ea-9169c8a1d4aa")
-		)
 		(pin "S2"
 			(uuid "d8c27634-538a-47e2-b6f2-469da666503a")
 		)
@@ -6233,9 +6211,6 @@
 		)
 		(pin "S4"
 			(uuid "38c9ee85-c4da-4251-aaf1-b909516b4bc8")
-		)
-		(pin "MID2"
-			(uuid "6c98bb81-7859-496f-aa49-a34b34bddf5f")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
@@ -6313,15 +6288,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 83.82 180)
+		(at 66.04 60.96 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1a3e6e75-863b-447f-93d1-87cea30b9f8a")
-		(property "Reference" "R20"
-			(at 135.89 81.28 0)
+		(uuid "1d2387a8-ff81-4e60-9b51-5782e9c5cdaa")
+		(property "Reference" "R5"
+			(at 64.77 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,8 +6304,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "5R1"
-			(at 137.16 83.82 90)
+		(property "Value" "5k1"
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6338,7 +6313,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201_Dense"
-			(at 138.938 83.82 90)
+			(at 67.818 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6346,8 +6321,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 137.16 83.82 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590904583181193217"
+			(at 66.04 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6355,8 +6330,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
-			(at 137.16 83.82 0)
+		(property "Description" "5.1kΩ 25V 50mW Thick Film Resistor ±1% SMD0201"
+			(at 66.04 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6340,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 137.16 83.82 90)
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6373,8 +6348,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
-			(at 137.16 83.82 90)
+		(property "Manufacturer Part Number" "0201WMF5101TEE"
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6382,8 +6357,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C50670526"
-			(at 137.16 83.82 90)
+		(property "LCSC" "C270344"
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6392,7 +6367,7 @@
 			)
 		)
 		(property "Distributor Link 1" ""
-			(at 137.16 83.82 90)
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,17 +6375,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 137.16 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 137.16 83.82 0)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF5101TEE?qs=e8oIoAS2J1RDz7enjiODVQ%3D%3D"
+			(at 66.04 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,15 +6385,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "57bc6aef-7e59-48f7-a463-3448e8a0f638")
+			(uuid "4c7d606d-3fb6-4334-b9a9-5b5f413c599a")
 		)
 		(pin "2"
-			(uuid "0bd8e62f-e59f-47cb-aeb4-9ffc95c219e8")
+			(uuid "c2dc0a71-b587-4102-9c0c-8d11786aacef")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R20")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6560,7 +6526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
 			(at 213.36 76.2 90)
 			(effects
 				(font
@@ -6569,7 +6535,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C50670526"
+		(property "LCSC" "C423536"
 			(at 213.36 76.2 90)
 			(effects
 				(font
@@ -6587,7 +6553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
 			(at 213.36 76.2 90)
 			(effects
 				(font
@@ -7090,33 +7056,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 172.72 68.58 0)
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3963d486-6bcc-4313-8163-43cfaa35cf7d")
-		(property "Reference" "R15"
-			(at 171.45 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "40k2"
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 170.942 68.58 90)
+		(fields_autoplaced yes)
+		(uuid "342459e1-e1b5-4e53-ad2d-b65546f426a7")
+		(property "Reference" "#FLG01"
+			(at 66.04 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,8 +7074,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590223907921174529"
-			(at 172.72 68.58 0)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7133,8 +7091,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "95.3kΩ, 25V, 50mW, Thick Film, ±1% 0201 SMD"
-			(at 172.72 68.58 0)
+		(property "Datasheet" "~"
+			(at 66.04 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7142,70 +7100,22 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 172.72 68.58 90)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer Part Number" "0201WMF9532TEE"
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C423395"
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" ""
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF9532TEE?qs=e8oIoAS2J1QewOvTgKSw9g%3D%3D"
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 172.72 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "31cab9b4-ac1e-4d4a-b919-4661268d2824")
 		)
 		(pin "1"
-			(uuid "a7688970-1a8a-4756-a6c2-90ae54409d0c")
+			(uuid "2eb2ab48-d42a-476c-884d-aaba883b6309")
 		)
 		(instances
-			(project "ESP32-S3 Pico D1"
+			(project ""
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R15")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -7213,15 +7123,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 71.12 60.96 180)
+		(at 137.16 83.82 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3a4cb530-147c-4961-a1cf-e7a7a706372c")
-		(property "Reference" "R5"
-			(at 69.85 58.42 0)
+		(uuid "35e0753b-2d7c-4ac9-8634-545ee42756c8")
+		(property "Reference" "R20"
+			(at 135.89 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7229,8 +7139,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "5R1"
-			(at 71.12 60.96 90)
+		(property "Value" "5k1"
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7238,7 +7148,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201_Dense"
-			(at 72.898 60.96 90)
+			(at 138.938 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7246,8 +7156,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 71.12 60.96 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590904583181193217"
+			(at 137.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7255,8 +7165,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
-			(at 71.12 60.96 0)
+		(property "Description" "5.1kΩ 25V 50mW Thick Film Resistor ±1% SMD0201"
+			(at 137.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7265,7 +7175,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 71.12 60.96 90)
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7273,8 +7183,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
-			(at 71.12 60.96 90)
+		(property "Manufacturer Part Number" "0201WMF5101TEE"
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7282,8 +7192,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C50670526"
-			(at 71.12 60.96 90)
+		(property "LCSC" "C270344"
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7292,7 +7202,7 @@
 			)
 		)
 		(property "Distributor Link 1" ""
-			(at 71.12 60.96 90)
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7300,17 +7210,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 71.12 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 71.12 60.96 0)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF5101TEE?qs=e8oIoAS2J1RDz7enjiODVQ%3D%3D"
+			(at 137.16 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7319,15 +7220,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "85b2f238-2645-4ef1-b02c-88eb4e949880")
+			(uuid "086c24de-a7df-4150-badf-12499eb88d47")
 		)
 		(pin "2"
-			(uuid "cd65db81-e33e-4f47-9fbf-225567328e69")
+			(uuid "bf98124b-bb9a-4f2b-9442-a16cfa581867")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R5")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -7601,24 +7502,24 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 68.58 0)
+		(at 137.16 76.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "433ac34b-c164-43b3-ab08-6d214def80b9")
-		(property "Reference" "R18"
-			(at 135.89 66.04 0)
+		(uuid "427c4590-7600-40ac-bb82-0c7e64961ec7")
+		(property "Reference" "R19"
+			(at 135.89 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right bottom)
+				(justify left top)
 			)
 		)
-		(property "Value" "40k2"
-			(at 137.16 68.58 90)
+		(property "Value" "5k1"
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7626,7 +7527,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201_Dense"
-			(at 135.382 68.58 90)
+			(at 138.938 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7634,8 +7535,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590223907921174529"
-			(at 137.16 68.58 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590904583181193217"
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7643,8 +7544,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "95.3kΩ, 25V, 50mW, Thick Film, ±1% 0201 SMD"
-			(at 137.16 68.58 0)
+		(property "Description" "5.1kΩ 25V 50mW Thick Film Resistor ±1% SMD0201"
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +7554,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 137.16 68.58 90)
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7661,8 +7562,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "0201WMF9532TEE"
-			(at 137.16 68.58 90)
+		(property "Manufacturer Part Number" "0201WMF5101TEE"
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,8 +7571,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C423395"
-			(at 137.16 68.58 90)
+		(property "LCSC" "C270344"
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7680,7 +7581,7 @@
 			)
 		)
 		(property "Distributor Link 1" ""
-			(at 137.16 68.58 90)
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,8 +7589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF9532TEE?qs=e8oIoAS2J1QewOvTgKSw9g%3D%3D"
-			(at 137.16 68.58 90)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF5101TEE?qs=e8oIoAS2J1RDz7enjiODVQ%3D%3D"
+			(at 137.16 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,90 +7598,16 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor  Link 2" ""
-			(at 137.16 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "d6eecd7c-bb08-4a01-8ce7-4b95acd1aaeb")
 		)
 		(pin "2"
-			(uuid "64155c24-86bd-449e-8a8a-030aea5070ac")
-		)
-		(pin "1"
-			(uuid "e4e5b734-fbb6-43e8-b199-ce9884e2f0be")
+			(uuid "470676e2-2a63-48ac-94c3-dd4f13fabc5b")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 261.62 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "454adce0-5ab9-4238-bbc2-853ae8ee88c0")
-		(property "Reference" "#PWR035"
-			(at 261.62 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V1"
-			(at 261.62 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 261.62 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a51e5e54-0145-408d-9b8d-27ca08224f26")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "#PWR035")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -8035,129 +7862,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 111.76 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4b225a35-a8c5-4aab-a245-74b4a4d91465")
-		(property "Reference" "R3"
-			(at 110.49 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "40k2"
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 109.982 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 111.76 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 111.76 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "AC0201FR-0726K1L"
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C910625"
-			(at 111.76 152.4 90)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/yageo/AC0201FR-0726K1L/5894466"
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/YAGEO/AC0201FR-0726K1L?qs=NgbZBzc1CyHdkzjeC2WcqA%3D%3D"
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 111.76 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "47dbaa28-2f9d-4911-aa3a-4b3fa51b65f9")
-		)
-		(pin "1"
-			(uuid "f343fc69-7b38-433a-9824-c791df098add")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 231.14 93.98 0)
 		(unit 1)
@@ -8339,16 +8043,16 @@
 		)
 	)
 	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
-		(at 154.94 88.9 90)
+		(lib_id "Device:R")
+		(at 48.26 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5e1e664f-9d51-49c6-84e0-87265841d65b")
-		(property "Reference" "D4"
-			(at 153.67 86.36 90)
+		(uuid "5fc43623-3595-49cb-a9e4-9f5811f08d0b")
+		(property "Reference" "R1"
+			(at 46.99 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8356,27 +8060,16 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "VESD16C1-HD1HG3-08"
-			(at 160.02 86.36 0)
+		(property "Value" "40k2"
+			(at 48.26 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 160.02 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/86185/vesd01c1-hd1tovesd33c1-hd1.pdf"
-			(at 154.94 90.17 0)
+		(property "Footprint" "Resistors:R0201_Dense"
+			(at 50.038 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8384,18 +8077,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "unidirectional TVS diode, 16V standoff, 17V breakdown, 28V clamp, DFN1006-2A"
-			(at 162.56 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 154.94 88.9 90)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
+			(at 48.26 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8403,8 +8086,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "VESD16C1-HD1HG3-08"
-			(at 154.94 88.9 90)
+		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
+			(at 48.26 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8412,8 +8095,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3703781"
-			(at 154.94 88.9 90)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 48.26 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,8 +8104,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/VESD16C1-HD1HG3-08/16028325"
-			(at 154.94 88.9 90)
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
+			(at 48.26 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8430,8 +8113,26 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Vishay-General-Semiconductor/VESD16C1-HD1HG3-08?qs=Li%252BoUPsLEntT6V2KzE4olg%3D%3D"
-			(at 154.94 88.9 90)
+		(property "LCSC" "C423536"
+			(at 48.26 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" ""
+			(at 48.26 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
+			(at 48.26 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8440,7 +8141,7 @@
 			)
 		)
 		(property "Distributor  Link 2" ""
-			(at 154.94 88.9 90)
+			(at 48.26 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8448,139 +8149,16 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "911b7fff-c719-4e7d-80fb-d49322d46525")
-		)
 		(pin "1"
-			(uuid "9ee1d840-058b-4aca-ab44-109e53341726")
+			(uuid "6ddffed1-0c2b-4c1e-8afb-471d04194621")
+		)
+		(pin "2"
+			(uuid "2ac487ac-a9f5-4861-af4d-c34621bb45ee")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
-		(at 91.44 60.96 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e1f4354-bf72-4837-a2df-e1867b54de0c")
-		(property "Reference" "D3"
-			(at 90.17 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "PESD24VF1BL-Q"
-			(at 93.98 62.2299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 91.44 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD24VF1BBL-Q.pdf"
-			(at 99.06 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD bidirectional diode, 5.0Vrwm, DFN0603-2, SOD962-2"
-			(at 101.6 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Nexperia"
-			(at 96.52 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "PESD24VF1BBL-Q"
-			(at 96.52 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22465859"
-			(at 104.14 60.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD24VF1BBL-QYL/21413722"
-			(at 106.68 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Nexperia/PESD24VF1BBL-QYL?qs=HoCaDK9Nz5d%2Fx7ymoTBtdA%3D%3D"
-			(at 109.22 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85962646-36aa-4268-8a5a-918d4b1fb05c")
-		)
-		(pin "2"
-			(uuid "23e3220f-9b85-4369-a9d9-fe5732ef5449")
-		)
-		(instances
-			(project ""
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "D3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8813,6 +8391,235 @@
 		)
 	)
 	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
+		(at 198.12 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "711397af-b825-41ec-a579-b7725e264ae8")
+		(property "Reference" "D5"
+			(at 196.85 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "D15V0H1U2LP-7B"
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 193.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
+			(at 198.12 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
+			(at 190.5 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 198.12 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
+			(at 198.12 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1973850"
+			(at 198.12 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
+			(at 198.12 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
+			(at 198.12 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6254ae13-0114-4a94-ba0b-357a254a781b")
+		)
+		(pin "1"
+			(uuid "c2caa640-9a4f-4d21-b830-0d62c4f33dc5")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 60.96 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79e5ca92-bba7-492b-9a07-38d46810e153")
+		(property "Reference" "R6"
+			(at 69.85 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "5k1"
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistors:R0201_Dense"
+			(at 72.898 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590904583181193217"
+			(at 71.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.1kΩ 25V 50mW Thick Film Resistor ±1% SMD0201"
+			(at 71.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "0201WMF5101TEE"
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C270344"
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" ""
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF5101TEE?qs=e8oIoAS2J1RDz7enjiODVQ%3D%3D"
+			(at 71.12 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19ab3706-6088-4b3b-92b5-df84500b3c31")
+		)
+		(pin "2"
+			(uuid "7e4d2f11-751e-401c-a206-d1c8999b1d5a")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 111.76 158.75 0)
 		(unit 1)
@@ -9026,141 +8833,16 @@
 		)
 	)
 	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
-		(at 78.74 60.96 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8b97238a-62b3-4ef8-ab9b-27f93db7a542")
-		(property "Reference" "D1"
-			(at 77.47 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right bottom)
-			)
-		)
-		(property "Value" "VESD16C1-HD1HG3-08"
-			(at 73.66 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 73.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/86185/vesd01c1-hd1tovesd33c1-hd1.pdf"
-			(at 78.74 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "unidirectional TVS diode, 16V standoff, 17V breakdown, 28V clamp, DFN1006-2A"
-			(at 71.12 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "VESD16C1-HD1HG3-08"
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C3703781"
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/VESD16C1-HD1HG3-08/16028325"
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Vishay-General-Semiconductor/VESD16C1-HD1HG3-08?qs=Li%252BoUPsLEntT6V2KzE4olg%3D%3D"
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 78.74 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b1a9b994-2f11-4f31-9c4e-f4a04f64a1a9")
-		)
-		(pin "1"
-			(uuid "7ff19d54-247f-4b1f-ac06-2b24141dcd5f")
-		)
-		(instances
-			(project ""
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 137.16 76.2 180)
+		(at 137.16 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8ce2831f-323b-4800-9025-dc57fd2386f6")
-		(property "Reference" "R19"
-			(at 135.89 73.66 0)
+		(uuid "9522e32e-ae10-493d-9da1-0c8cd6596611")
+		(property "Reference" "R18"
+			(at 135.89 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9168,8 +8850,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "5R1"
-			(at 137.16 76.2 90)
+		(property "Value" "40k2"
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9177,7 +8859,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201_Dense"
-			(at 138.938 76.2 90)
+			(at 138.938 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9186,7 +8868,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 137.16 76.2 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9195,7 +8877,7 @@
 			)
 		)
 		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
-			(at 137.16 76.2 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9204,7 +8886,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 137.16 76.2 90)
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9212,8 +8894,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
-			(at 137.16 76.2 90)
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9221,8 +8903,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C50670526"
-			(at 137.16 76.2 90)
+		(property "LCSC" "C423536"
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9231,7 +8913,7 @@
 			)
 		)
 		(property "Distributor Link 1" ""
-			(at 137.16 76.2 90)
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9239,8 +8921,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 137.16 76.2 90)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
+			(at 137.16 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9249,7 +8931,7 @@
 			)
 		)
 		(property "Distributor  Link 2" ""
-			(at 137.16 76.2 0)
+			(at 137.16 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9258,15 +8940,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed64f4d7-3a0e-4476-b943-ec0d9ff579d6")
+			(uuid "cb62a34b-a2ab-44bb-9938-a6c24ef9b407")
 		)
 		(pin "2"
-			(uuid "e4037c33-9863-491b-8492-454d41007c59")
+			(uuid "35722651-dbba-4de6-84c1-7e0dad3c22a0")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R19")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -9434,24 +9116,24 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 261.62 55.88 180)
+		(at 248.92 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "984daa3a-f222-48c4-a5c5-172a4c188e8d")
-		(property "Reference" "R22"
-			(at 262.89 58.42 90)
+		(uuid "994b195f-cf67-4dfe-ace9-4ca8da97127c")
+		(property "Reference" "R27"
+			(at 247.65 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
+				(justify left top)
 			)
 		)
-		(property "Value" "95k3"
-			(at 261.62 55.88 90)
+		(property "Value" "40k2"
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9459,7 +9141,7 @@
 			)
 		)
 		(property "Footprint" "Resistors:R0201_Dense"
-			(at 263.398 55.88 90)
+			(at 250.698 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9467,8 +9149,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590223907921174529"
-			(at 261.62 55.88 0)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
+			(at 248.92 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9476,8 +9158,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "95.3kΩ, 25V, 50mW, Thick Film, ±1% 0201 SMD"
-			(at 261.62 55.88 0)
+		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
+			(at 248.92 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,7 +9168,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 261.62 55.88 90)
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9494,8 +9176,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "0201WMF9532TEE"
-			(at 261.62 55.88 90)
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9503,8 +9185,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C423395"
-			(at 261.62 55.88 90)
+		(property "LCSC" "C423536"
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9513,7 +9195,7 @@
 			)
 		)
 		(property "Distributor Link 1" ""
-			(at 261.62 55.88 90)
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9521,8 +9203,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF9532TEE?qs=e8oIoAS2J1QewOvTgKSw9g%3D%3D"
-			(at 261.62 55.88 90)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
+			(at 248.92 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9531,7 +9213,7 @@
 			)
 		)
 		(property "Distributor  Link 2" ""
-			(at 261.62 55.88 90)
+			(at 248.92 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9539,16 +9221,16 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "ce784220-533b-469d-bf5c-1505a2c982e3")
-		)
 		(pin "1"
-			(uuid "4fc98fb1-ed83-4e0a-9d51-3baf10d57d2c")
+			(uuid "1c9cba34-7bb2-4213-88c7-da76f85d9980")
+		)
+		(pin "2"
+			(uuid "0210d232-72eb-4a7a-91d3-e63daf054e5a")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R22")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -9616,128 +9298,6 @@
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 66.04 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9ae4f09a-5000-4f1d-bb34-79ea12311a78")
-		(property "Reference" "R6"
-			(at 64.77 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right bottom)
-			)
-		)
-		(property "Value" "5R1"
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 64.262 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 66.04 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
-			(at 66.04 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C50670526"
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" ""
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 66.04 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 66.04 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e53123f-e475-461f-b31e-4e9c8711884f")
-		)
-		(pin "2"
-			(uuid "2e6a0606-fd1a-4f9b-a76f-a0b38629797b")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9878,6 +9438,122 @@
 		)
 	)
 	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
+		(at 154.94 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a161ad47-cce1-485d-a6bd-2ce97b0cb783")
+		(property "Reference" "D4"
+			(at 156.21 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "D15V0H1U2LP-7B"
+			(at 160.02 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
+			(at 154.94 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
+			(at 162.56 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 154.94 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
+			(at 154.94 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1973850"
+			(at 154.94 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
+			(at 154.94 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
+			(at 154.94 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "640cd30d-0af6-4432-bf74-c939b998fae3")
+		)
+		(pin "1"
+			(uuid "261b458d-4d21-42fc-88ae-c3b2bfb68a67")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 152.4 147.32 0)
 		(unit 1)
@@ -9904,7 +9580,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Capacitors:C0402_Nominal"
+		(property "Footprint" "Capacitors:C0402_Dense"
 			(at 153.3652 151.13 0)
 			(effects
 				(font
@@ -9992,6 +9668,360 @@
 		)
 	)
 	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
+		(at 76.2 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a98f92d5-aee2-4ec0-9878-784e094dfb0f")
+		(property "Reference" "D10"
+			(at 74.93 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "D15V0H1U2LP-7B"
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 71.12 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
+			(at 76.2 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
+			(at 68.58 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 76.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
+			(at 76.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1973850"
+			(at 76.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
+			(at 76.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
+			(at 76.2 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64ed8a7e-f31f-467a-8a1f-d85fbafa6ae6")
+		)
+		(pin "1"
+			(uuid "3536e72e-707a-4f60-bbd9-5cf165b7b194")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a99f303e-b273-4e7d-959b-47beb793dcc9")
+		(property "Reference" "R15"
+			(at 171.45 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "40k2"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistors:R0201_Dense"
+			(at 174.498 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
+			(at 172.72 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
+			(at 172.72 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C423536"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" ""
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
+			(at 172.72 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor  Link 2" ""
+			(at 172.72 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d09c9d12-5a74-480d-ae3a-3d9d522d6388")
+		)
+		(pin "2"
+			(uuid "e4077504-dc5d-4c78-bcc3-90bde9aa033a")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
+		(at 81.28 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acc78cd3-c761-4a37-88bb-920d689f2f6f")
+		(property "Reference" "D1"
+			(at 80.01 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "D15V0H1U2LP-7B"
+			(at 76.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
+			(at 81.28 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
+			(at 73.66 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 81.28 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
+			(at 81.28 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1973850"
+			(at 81.28 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
+			(at 81.28 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
+			(at 81.28 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0eb35f8c-824e-478b-9bf9-b1af9943a8c7")
+		)
+		(pin "1"
+			(uuid "409295c1-bf49-4925-a714-3b2a5ee0ac6d")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 91.44 124.46 0)
 		(unit 1)
@@ -10057,44 +10087,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
-		(at 198.12 88.9 270)
+		(lib_id "Device:R")
+		(at 111.76 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b004d6cf-9bfe-4635-8a6e-614c4eb14cce")
-		(property "Reference" "D5"
-			(at 196.85 86.36 90)
+		(uuid "be6acc82-bbf8-40cf-913a-6475bcfe1961")
+		(property "Reference" "R3"
+			(at 110.49 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right bottom)
+				(justify left top)
 			)
 		)
-		(property "Value" "VESD16C1-HD1HG3-08"
-			(at 193.04 91.44 0)
+		(property "Value" "40k2"
+			(at 111.76 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 193.04 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/86185/vesd01c1-hd1tovesd33c1-hd1.pdf"
-			(at 198.12 87.63 0)
+		(property "Footprint" "Resistors:R0201_Dense"
+			(at 113.538 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10102,18 +10121,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "unidirectional TVS diode, 16V standoff, 17V breakdown, 28V clamp, DFN1006-2A"
-			(at 190.5 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 198.12 88.9 90)
+		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
+			(at 111.76 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10121,8 +10130,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "VESD16C1-HD1HG3-08"
-			(at 198.12 88.9 90)
+		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
+			(at 111.76 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10130,8 +10139,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3703781"
-			(at 198.12 88.9 90)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 111.76 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10139,8 +10148,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/VESD16C1-HD1HG3-08/16028325"
-			(at 198.12 88.9 90)
+		(property "Manufacturer Part Number" "0201WMF4022TEE"
+			(at 111.76 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10148,8 +10157,26 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Vishay-General-Semiconductor/VESD16C1-HD1HG3-08?qs=Li%252BoUPsLEntT6V2KzE4olg%3D%3D"
-			(at 198.12 88.9 90)
+		(property "LCSC" "C423536"
+			(at 111.76 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" ""
+			(at 111.76 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF4022TEE?qs=e8oIoAS2J1RX1tXu%252BK3OYQ%3D%3D"
+			(at 111.76 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10158,7 +10185,7 @@
 			)
 		)
 		(property "Distributor  Link 2" ""
-			(at 198.12 88.9 90)
+			(at 111.76 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10166,16 +10193,16 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "695b1060-0b00-4596-b758-7134d7d9ec39")
-		)
 		(pin "1"
-			(uuid "731b2225-1c83-4f70-a9d4-c496f13fc712")
+			(uuid "f13f3eea-b683-433c-a305-6a3056ce3898")
+		)
+		(pin "2"
+			(uuid "3722eb55-0771-4d0d-8ed2-3e5454958ba3")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "D5")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -10189,17 +10216,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b7ba7a15-2a1e-4e8f-9bce-807f80094c8d")
+		(uuid "c2e77069-13cc-48d2-b08b-26beece14185")
 		(property "Reference" "D6"
-			(at 229.87 86.36 90)
+			(at 232.41 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify right bottom)
 			)
 		)
-		(property "Value" "VESD16C1-HD1HG3-08"
+		(property "Value" "D15V0H1U2LP-7B"
 			(at 236.22 86.36 0)
 			(effects
 				(font
@@ -10218,7 +10245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/86185/vesd01c1-hd1tovesd33c1-hd1.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
 			(at 231.14 90.17 0)
 			(effects
 				(font
@@ -10227,7 +10254,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "unidirectional TVS diode, 16V standoff, 17V breakdown, 28V clamp, DFN1006-2A"
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
 			(at 238.76 86.36 0)
 			(effects
 				(font
@@ -10237,7 +10264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 231.14 88.9 90)
 			(effects
 				(font
@@ -10246,7 +10273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "VESD16C1-HD1HG3-08"
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
 			(at 231.14 88.9 90)
 			(effects
 				(font
@@ -10255,7 +10282,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3703781"
+		(property "LCSC" "C1973850"
 			(at 231.14 88.9 90)
 			(effects
 				(font
@@ -10264,7 +10291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/VESD16C1-HD1HG3-08/16028325"
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
 			(at 231.14 88.9 90)
 			(effects
 				(font
@@ -10273,16 +10300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Vishay-General-Semiconductor/VESD16C1-HD1HG3-08?qs=Li%252BoUPsLEntT6V2KzE4olg%3D%3D"
-			(at 231.14 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
 			(at 231.14 88.9 90)
 			(effects
 				(font
@@ -10292,10 +10310,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "d5ddd340-bb62-4044-addf-2a3e833fdab1")
+			(uuid "3a372452-6ac2-48cf-8e86-6b4b325a1a94")
 		)
 		(pin "1"
-			(uuid "84f1357a-65f0-426e-88c4-24bbd949dfb0")
+			(uuid "4780102c-b62c-4ffa-b6cd-f6a351c212f0")
 		)
 		(instances
 			(project "ESP32-S3 Pico D1"
@@ -10333,7 +10351,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Capacitors:C0402_Nominal"
+		(property "Footprint" "Capacitors:C0402_Dense"
 			(at 102.5652 151.13 0)
 			(effects
 				(font
@@ -10714,7 +10732,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Capacitors:C0402_Nominal"
+		(property "Footprint" "Capacitors:C0402_Dense"
 			(at 87.3252 151.13 0)
 			(effects
 				(font
@@ -10796,129 +10814,6 @@
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 48.26 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da766040-d00f-491b-8794-5f570eee434c")
-		(property "Reference" "R1"
-			(at 46.99 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "40k2"
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 46.482 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 48.26 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 48.26 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "AC0201FR-0726K1L"
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C910625"
-			(at 48.26 152.4 90)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/yageo/AC0201FR-0726K1L/5894466"
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/YAGEO/AC0201FR-0726K1L?qs=NgbZBzc1CyHdkzjeC2WcqA%3D%3D"
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 48.26 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d7099cd6-914e-4be4-9632-47df6130cd13")
-		)
-		(pin "1"
-			(uuid "b287f42f-34af-455a-a32d-ceadfc09e791")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/e0972e0f-f0f8-4dcf-a84b-49aae9c274e3"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -11049,7 +10944,7 @@
 	)
 	(symbol
 		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
-		(at 86.36 60.96 90)
+		(at 86.36 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11057,7 +10952,7 @@
 		(dnp no)
 		(uuid "de3b0ef0-9bd1-444c-807f-5b0d9588d9ef")
 		(property "Reference" "D2"
-			(at 85.09 58.42 90)
+			(at 87.63 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11065,8 +10960,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "PESD24VF1BL-Q"
-			(at 88.9 62.2299 90)
+		(property "Value" "ESDSLC24VLB-TP"
+			(at 83.82 59.6901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11084,8 +10979,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD24VF1BBL-Q.pdf"
-			(at 93.98 60.96 0)
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/ESDSLC24VLB(DFN1006-2).pdf"
+			(at 78.74 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11094,8 +10989,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "ESD bidirectional diode, 5.0Vrwm, DFN0603-2, SOD962-2"
-			(at 96.52 60.96 0)
+		(property "Description" "ESD bidirectional diode, 24Vrwm, 26.5Vbr, 40Vcl, DFN1006"
+			(at 76.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11104,8 +10999,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Nexperia"
-			(at 91.44 60.96 0)
+		(property "Manufacturer" "MCC(Micro Commercial Components)"
+			(at 81.28 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11114,8 +11009,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PESD24VF1BBL-Q"
-			(at 91.44 50.8 0)
+		(property "Manufacturer Part Number" "ESDSLC24VLB-TP"
+			(at 81.28 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11124,8 +11019,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22465859"
-			(at 99.06 60.96 0)
+		(property "LCSC" "C7463931"
+			(at 73.66 60.96 0)
 			(show_name yes)
 			(effects
 				(font
@@ -11135,8 +11030,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD24VF1BBL-QYL/21413722"
-			(at 101.6 60.96 0)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/mcc-micro-commercial-components/ESDSLC24VLB-TP/17945310"
+			(at 71.12 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11145,8 +11040,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Nexperia/PESD24VF1BBL-QYL?qs=HoCaDK9Nz5d%2Fx7ymoTBtdA%3D%3D"
-			(at 104.14 60.96 0)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/ESDSLC24VLB-TP?qs=rSMjJ%252B1ewcTdJ4KduSUKUw%3D%3D"
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)

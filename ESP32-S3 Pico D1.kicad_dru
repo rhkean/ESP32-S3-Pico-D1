@@ -1,0 +1,20 @@
+(version 1)
+(rule "Simplified Via Exception"
+    (constraint clearance (min 0.1mm))
+    (condition "A.Type == 'Via' || B.Type == 'Via'"))
+
+(rule "Universal Pad Clearance"
+    (constraint clearance (min 0.1mm))
+    (condition "A.Type == 'Pad' || B.Type == 'Pad'"))
+
+(rule "Override DP clearance in U6, U9, & CN1 courtyard for A"
+    (constraint clearance (min 0.1mm))
+    (condition "A.NetClass =='USB_DP' && (A.intersectsCourtyard('U6') || A.intersectsCourtyard('U9') || A.intersectsCourtyard('CN1'))"))
+
+(rule "Override DP clearance in U6, U9, & CN1 courtyard for B"
+    (constraint clearance (min 0.1mm))
+    (condition "B.NetClass == 'USB_DP' && (B.intersectsCourtyard('U6') || B.intersectsCourtyard('U9') || B.intersectsCourtyard('CN1'))"))
+
+(rule "Set all clearances within a courtyard to 0.1mm"
+	(constraint clearance (min 0.1mm))
+	(condition "A.intersectsCourtyard('*') && B.intersectsCourtyard('*')"))

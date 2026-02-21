@@ -1969,12 +1969,119 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 104.14 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01d64216-eebd-428f-b8de-d57b29e412d5")
+	)
+	(junction
+		(at 175.26 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2418fda4-f2c4-4168-a630-6692598e804f")
 	)
 	(junction
 		(at 177.8 106.68)
@@ -2001,12 +2108,6 @@
 		(uuid "e5f9ebfe-27d9-41b3-82b3-112102ab9b06")
 	)
 	(junction
-		(at 172.72 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebb1fe64-5c9f-4607-8986-6a0ea0ebb12b")
-	)
-	(junction
 		(at 160.02 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2017,6 +2118,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1a8ef40-a259-4ad5-9dfe-8b763dd9c7e0")
+	)
+	(junction
+		(at 172.72 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f341e965-0c31-4528-b265-59f01e6bf8ba")
 	)
 	(junction
 		(at 165.1 86.36)
@@ -2122,33 +2229,23 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 76.2) (xy 172.72 81.28)
+			(xy 172.72 93.98) (xy 172.72 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "338f90f3-5dff-46fe-bc66-3b00443c85b4")
+		(uuid "35c42312-0c11-4717-aee0-4cbccaaec6e3")
 	)
 	(wire
 		(pts
-			(xy 191.77 76.2) (xy 191.77 106.68)
+			(xy 177.8 91.44) (xy 177.8 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3cfdc809-8c23-4aac-9584-3b32a350353f")
-	)
-	(wire
-		(pts
-			(xy 177.8 83.82) (xy 177.8 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "499b91c5-e809-4c7a-aae1-e4e1e55fd04d")
+		(uuid "45719f90-f5e4-421c-96a4-494d410ac9c5")
 	)
 	(wire
 		(pts
@@ -2159,16 +2256,6 @@
 			(type default)
 		)
 		(uuid "49a7119f-13df-40f4-9ef2-b82262997ed0")
-	)
-	(wire
-		(pts
-			(xy 172.72 81.28) (xy 182.88 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d3864b6-a233-44b7-9c8d-4fce56188232")
 	)
 	(wire
 		(pts
@@ -2232,16 +2319,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 76.2) (xy 187.96 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad4a2b4-032e-4cea-9afa-83ecc8a39a8c")
-	)
-	(wire
-		(pts
 			(xy 160.02 95.25) (xy 160.02 88.9)
 		)
 		(stroke
@@ -2259,6 +2336,16 @@
 			(type default)
 		)
 		(uuid "6c383cd0-b123-49ef-8ee2-f3ad879ec543")
+	)
+	(wire
+		(pts
+			(xy 172.72 93.98) (xy 175.26 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7508a109-604f-4460-b812-d791bab41c1b")
 	)
 	(wire
 		(pts
@@ -2332,6 +2419,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 81.28) (xy 191.77 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b558fc-c90e-47b5-8434-3d96c7d6e22d")
+	)
+	(wire
+		(pts
 			(xy 104.14 67.31) (xy 119.38 67.31)
 		)
 		(stroke
@@ -2362,6 +2459,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc72e2f1-042a-4a71-a5cb-681c9824cdfc")
+	)
+	(wire
+		(pts
 			(xy 104.14 66.04) (xy 104.14 67.31)
 		)
 		(stroke
@@ -2382,6 +2489,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 81.28) (xy 191.77 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c183c86a-c2e9-44fe-8371-24002d083699")
+	)
+	(wire
+		(pts
 			(xy 104.14 67.31) (xy 104.14 69.85)
 		)
 		(stroke
@@ -2389,16 +2506,6 @@
 			(type default)
 		)
 		(uuid "c1b1550e-b310-4660-84f8-d5dfeafb17cd")
-	)
-	(wire
-		(pts
-			(xy 182.88 83.82) (xy 177.8 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6b54c24-f6b1-4a4f-a897-f9b4d055d399")
 	)
 	(wire
 		(pts
@@ -2502,7 +2609,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 81.28) (xy 172.72 95.25)
+			(xy 172.72 76.2) (xy 172.72 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2510,7 +2617,17 @@
 		)
 		(uuid "f4ddf931-20f8-441c-a9b5-821008123208")
 	)
-	(label "CAN-"
+	(wire
+		(pts
+			(xy 175.26 93.98) (xy 182.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd8e8cd-e11d-4feb-8feb-73836c8076cb")
+	)
+	(label "CAN_N"
 		(at 154.94 88.9 0)
 		(effects
 			(font
@@ -2520,7 +2637,7 @@
 		)
 		(uuid "08eeea46-84c3-4595-b63a-d2901d3adee7")
 	)
-	(label "CAN_L_F"
+	(label "CAN_F_N"
 		(at 132.08 88.9 0)
 		(effects
 			(font
@@ -2530,7 +2647,7 @@
 		)
 		(uuid "8ae2aa6c-04dc-447e-abb5-fea8bffa479d")
 	)
-	(label "CAN+"
+	(label "CAN_P"
 		(at 154.94 86.36 0)
 		(effects
 			(font
@@ -2540,7 +2657,7 @@
 		)
 		(uuid "cbaf242f-7e4e-45ba-bc49-00a0b617182d")
 	)
-	(label "CAN_H_F"
+	(label "CAN_F_P"
 		(at 132.08 86.36 0)
 		(effects
 			(font
@@ -2572,7 +2689,7 @@
 			)
 		)
 	)
-	(global_label "CAN_S"
+	(global_label "CAN_Silent"
 		(shape input)
 		(at 99.06 91.44 180)
 		(fields_autoplaced yes)
@@ -2584,7 +2701,7 @@
 		)
 		(uuid "a2be0ac9-2ee0-4996-afa1-2918fb9a7817")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.2086 91.44 0)
+			(at 85.9753 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2617,130 +2734,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 106.68 97.79 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "102c754d-48f7-44dd-a606-c91800403ae4")
-		(property "Reference" "R14"
-			(at 105.41 94.996 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "5R1"
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors:R0201_Dense"
-			(at 108.458 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "25V 5.1Ω 50mW Thick Film Resistor ±1% 0201 Chip Resistor"
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "PF01WMF510KTEE"
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C50670526"
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" ""
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/PF01WMF5100TEE?qs=ST9lo4GX8V3Pivkn51oUdQ%3D%3D"
-			(at 106.68 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 106.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b942106-474c-42e6-8f76-3717b8f6b530")
-		)
-		(pin "2"
-			(uuid "29456ec6-6de1-4cd1-aa9a-876bb1f03716")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 187.96 86.36 0)
+		(at 187.96 91.44 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2749,7 +2744,7 @@
 		(dnp no)
 		(uuid "114024ab-ece0-4094-99bc-744b2505113c")
 		(property "Reference" "CN2"
-			(at 190.5 86.0045 0)
+			(at 190.5 91.0845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2758,7 +2753,7 @@
 			)
 		)
 		(property "Value" "BM04B-ACHSS"
-			(at 190.5 83.4645 0)
+			(at 190.5 88.5445 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2768,7 +2763,7 @@
 			)
 		)
 		(property "Footprint" "Personal_FootprintLibrary:JST_ACH_BM04B-ACHSS-A-GAN-ETF_1x04-1MP_P1.20mm_Vertical"
-			(at 187.96 68.834 0)
+			(at 187.96 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2777,7 +2772,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eACH.pdf?697468fc2c682"
-			(at 190.754 71.374 0)
+			(at 190.754 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2786,7 +2781,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER SMD R/A 4POS 1.2MM"
-			(at 188.976 66.802 0)
+			(at 188.976 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2794,8 +2789,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "JST"
-			(at 187.198 52.324 0)
+		(property "Manufacturer" "XUNPU"
+			(at 187.198 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,8 +2798,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "BM04B-ACHSS-A-GAN-TF(LF)(SN), BM04B-ACHSS-A-GAN-ETF(LF)(SN)"
-			(at 199.39 73.406 0)
+		(property "Manufacturer Part Number" "WAFER-ACH1.2-4PWB"
+			(at 199.39 78.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,8 +2807,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C46772640, C5246838, C5308725"
-			(at 188.214 64.262 0)
+		(property "LCSC" "C46772640"
+			(at 188.214 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,7 +2817,7 @@
 			)
 		)
 		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM04B-ACHSS-A-GAN-TF/1647790"
-			(at 189.484 61.976 0)
+			(at 189.484 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,34 +2826,7 @@
 			)
 		)
 		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/JST-Commercial/BM04B-ACHSS-A-GAN-TFLFSN?qs=QpmGXVUTftFsbdf52tFLQQ%3D%3D"
-			(at 192.786 56.896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer (alt)" "Xunpu"
-			(at 187.452 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number (alt)" "WAFER-ACH1.2-4PWB"
-			(at 188.468 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 187.96 86.36 0)
+			(at 192.786 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2885,6 +2853,129 @@
 			(project ""
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
 					(reference "CN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
+		(at 160.02 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "124fc08e-ec20-4c3e-adf2-c1835f1d7bfb")
+		(property "Reference" "D7"
+			(at 161.29 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "ESDSLC24VLB-TP"
+			(at 157.48 97.7901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 160.02 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/ESDSLC24VLB(DFN1006-2).pdf"
+			(at 152.4 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD bidirectional diode, 24Vrwm, 26.5Vbr, 40Vcl, DFN1006"
+			(at 149.86 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "MCC(Micro Commercial Components)"
+			(at 154.94 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ESDSLC24VLB-TP"
+			(at 154.94 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7463931"
+			(at 147.32 99.06 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/mcc-micro-commercial-components/ESDSLC24VLB-TP/17945310"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/ESDSLC24VLB-TP?qs=rSMjJ%252B1ewcTdJ4KduSUKUw%3D%3D"
+			(at 142.24 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bff137f-879a-4c21-afbf-fb9dfde72dc3")
+		)
+		(pin "2"
+			(uuid "8e1ba384-e3e0-41f9-8542-5c67b47ba4b5")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -3042,6 +3133,128 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 106.68 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16f0cf08-b878-4ccc-a195-007d21c18ff2")
+		(property "Reference" "R14"
+			(at 107.95 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "95k3"
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistors:R0201_Dense"
+			(at 108.458 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590223907921174529"
+			(at 106.68 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "95.3kΩ, 25V, 50mW, Thick Film, ±1% 0201 SMD"
+			(at 106.68 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "0201WMF9532TEE"
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C423395"
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" ""
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Royalohm/0201WMF9532TEE?qs=e8oIoAS2J1QewOvTgKSw9g%3D%3D"
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor  Link 2" ""
+			(at 106.68 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bb608e01-535d-4e1a-a718-37aad4fa7275")
+		)
+		(pin "1"
+			(uuid "2cd6c9a1-90fd-4dee-9976-2aa7b148e318")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 104.14 66.04 0)
 		(unit 1)
@@ -3101,6 +3314,72 @@
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 175.26 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39d40ec3-b32e-46ce-a6a1-bfae4c727a88")
+		(property "Reference" "#FLG03"
+			(at 175.26 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 175.26 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 175.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3123e26f-72d4-43aa-a807-2684f8c92b93")
+		)
+		(instances
+			(project ""
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -3303,15 +3582,15 @@
 	)
 	(symbol
 		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
-		(at 160.02 99.06 270)
+		(at 165.1 99.06 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "517c5a33-1c94-41b6-8075-78548aba460e")
-		(property "Reference" "D7"
-			(at 160.02 102.87 90)
+		(uuid "55d8d3ba-c5bf-4893-8a67-e6c7704b91ba")
+		(property "Reference" "D8"
+			(at 166.37 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,8 +3598,8 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "PESD24VF1BL-Q"
-			(at 157.48 97.7901 90)
+		(property "Value" "ESDSLC24VLB-TP"
+			(at 162.56 97.7901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,7 +3609,7 @@
 			)
 		)
 		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 160.02 99.06 0)
+			(at 165.1 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,18 +3617,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD24VF1BBL-Q.pdf"
-			(at 152.4 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD bidirectional diode, 5.0Vrwm, DFN0603-2, SOD962-2"
-			(at 149.86 99.06 0)
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/ESDSLC24VLB(DFN1006-2).pdf"
+			(at 157.48 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,7 +3627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Nexperia"
+		(property "Description" "ESD bidirectional diode, 24Vrwm, 26.5Vbr, 40Vcl, DFN1006"
 			(at 154.94 99.06 0)
 			(effects
 				(font
@@ -3368,8 +3637,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part Number" "PESD24VF1BBL-Q"
-			(at 154.94 109.22 0)
+		(property "Manufacturer" "MCC(Micro Commercial Components)"
+			(at 160.02 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3378,8 +3647,18 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22465859"
-			(at 147.32 99.06 0)
+		(property "Manufacturer Part Number" "ESDSLC24VLB-TP"
+			(at 160.02 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7463931"
+			(at 152.4 99.06 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3389,8 +3668,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD24VF1BBL-QYL/21413722"
-			(at 144.78 99.06 0)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/mcc-micro-commercial-components/ESDSLC24VLB-TP/17945310"
+			(at 149.86 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3399,8 +3678,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Nexperia/PESD24VF1BBL-QYL?qs=HoCaDK9Nz5d%2Fx7ymoTBtdA%3D%3D"
-			(at 142.24 99.06 0)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/ESDSLC24VLB-TP?qs=rSMjJ%252B1ewcTdJ4KduSUKUw%3D%3D"
+			(at 147.32 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3410,15 +3689,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "89c0c47b-cfdf-43e1-ba74-bf47ed1f9468")
+			(uuid "41030155-4897-4e05-8a6d-141ef8188256")
 		)
 		(pin "2"
-			(uuid "adffec93-a5e2-42b8-8c38-9de7c49a2929")
+			(uuid "457127c3-4932-4c36-9ad7-9273f1fa7b0b")
 		)
 		(instances
-			(project ""
+			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
-					(reference "D7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3533,254 +3812,6 @@
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
-		(at 172.72 99.06 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "71438ee9-bae1-45ce-a450-fe21bd2e6f66")
-		(property "Reference" "D9"
-			(at 171.45 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right bottom)
-			)
-		)
-		(property "Value" "VESD16C1-HD1HG3-08"
-			(at 167.64 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 167.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/86185/vesd01c1-hd1tovesd33c1-hd1.pdf"
-			(at 172.72 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "unidirectional TVS diode, 16V standoff, 17V breakdown, 28V clamp, DFN1006-2A"
-			(at 165.1 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "VESD16C1-HD1HG3-08"
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C3703781"
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/vishay-general-semiconductor-diodes-division/VESD16C1-HD1HG3-08/16028325"
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Vishay-General-Semiconductor/VESD16C1-HD1HG3-08?qs=Li%252BoUPsLEntT6V2KzE4olg%3D%3D"
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor  Link 2" ""
-			(at 172.72 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "edf0b3de-5ab3-4d22-9254-173c422d1563")
-		)
-		(pin "1"
-			(uuid "48a740c0-fce1-4675-8cf6-bc0c092f6627")
-		)
-		(instances
-			(project "ESP32-S3 Pico D1"
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PersonalSchematicSymbolLibrary:PESD24VF1BBL-Q")
-		(at 165.1 99.06 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "874bc2d0-68d0-4c34-b616-fa3b7e4d44c4")
-		(property "Reference" "D8"
-			(at 165.1 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Value" "PESD24VF1BL-Q"
-			(at 162.56 97.7901 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
-			(at 165.1 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD24VF1BBL-Q.pdf"
-			(at 157.48 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD bidirectional diode, 5.0Vrwm, DFN0603-2, SOD962-2"
-			(at 154.94 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Nexperia"
-			(at 160.02 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "PESD24VF1BBL-Q"
-			(at 160.02 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C22465859"
-			(at 152.4 99.06 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD24VF1BBL-QYL/21413722"
-			(at 149.86 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Nexperia/PESD24VF1BBL-QYL?qs=HoCaDK9Nz5d%2Fx7ymoTBtdA%3D%3D"
-			(at 147.32 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89c0c47b-cfdf-43e1-ba74-bf47ed1f9469")
-		)
-		(pin "2"
-			(uuid "adffec93-a5e2-42b8-8c38-9de7c49a292a")
-		)
-		(instances
-			(project ""
-				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
-					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4181,6 +4212,122 @@
 			(project "ESP32-S3 Pico D1"
 				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PersonalSchematicSymbolLibrary:TVS_Unidirectional")
+		(at 172.72 99.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea57145a-079f-457d-b8e1-523de4538c26")
+		(property "Reference" "D9"
+			(at 171.45 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "D15V0H1U2LP-7B"
+			(at 167.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Personal_FootprintLibrary:DFN1006-2"
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/D15V0H1U2LP.pdf"
+			(at 172.72 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "unidirectional TVS diode, 15Vrwm, 16Vbr , 22Vcl, X1-DFN1006-2"
+			(at 165.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "D15V0H1U2LP-7B"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1973850"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 1" "https://www.digikey.com/en/products/detail/diodes-incorporated/D15V0H1U2LP-7B/9089765"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Link 2" "https://www.mouser.com/ProductDetail/Diodes-Incorporated/D15V0H1U2LP-7B?qs=y6ZabgHbY%252ByqgwdrQEA6wA%3D%3D"
+			(at 172.72 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ef3839b-2bbb-4424-b984-342e675cd576")
+		)
+		(pin "1"
+			(uuid "1f0e7605-96ea-4d81-9ede-4954d01b563e")
+		)
+		(instances
+			(project "ESP32-S3 Pico D1"
+				(path "/67f7b1e1-e87f-421a-8424-bb26889ab157/a04a4bdb-30b7-44d7-ac1c-f847f02e7058"
+					(reference "D9")
 					(unit 1)
 				)
 			)
